@@ -26,3 +26,12 @@
 .size-lg {
     min-height: 115px;
 }
+
+.is-clickable {
+    cursor: pointer;
+}
+
+.is-dragable {
+    cursor: grab;
+    user-select: none;
+}

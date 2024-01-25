@@ -7,7 +7,19 @@ export default {
     tags: ['autodocs'],
 };
 
-export const Default = () => <Card />;
+const Template = (args) => <Card {...args} />
+
+export const Default = Template.bind({})
+
+export const Clickable = Template.bind({})
+Clickable.args = {
+    isClickable: true
+}
+
+export const Dragable = Template.bind({})
+Dragable.args = {
+    isDragable: true
+}
 
 export const Colors = () => 
     options.colors.map((color, index) => {
