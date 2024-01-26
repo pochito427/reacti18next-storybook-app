@@ -6,7 +6,7 @@ import classNames from 'classnames';
 import './card.css';
 
 export const Card = ({
-    children = "I'm a card",
+    children,
     color = "primary",
     size = "sm",
     isClickable,
