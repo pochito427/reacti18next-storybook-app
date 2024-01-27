@@ -1,3 +1,5 @@
+import { userEvent, within } from '@storybook/testing-library';
+import { expect } from '@storybook/jest';
 import { Button } from './Button';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
@@ -22,6 +24,12 @@ export const Primary = {
     primary: true,
     label: 'Button',
   },
+};
+
+Primary.play = async({args, canvasElement}) => {
+  const canvas = within(canvasElement);
+  await userEvent.click(canvas.getByRole('button'));
+  await expect(canvas.getByText('Button')).toBeInTheDocument();
 };
 
 export const Secondary = {
@@ -51,4 +59,10 @@ export const Warning = {
     label: 'Delete now',
     backgroundColor: 'red',
   }
+};
+
+Warning.play = async({args, canvasElement}) => {
+  const canvas = within(canvasElement);
+  await userEvent.click(canvas.getByRole('button'));
+  await expect(canvas.getByText('Delete now')).toBeInTheDocument();
 };
