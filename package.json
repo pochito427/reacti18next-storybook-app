@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "test-storybook": "test-storybook"
   },
   "keywords": [],
   "author": "Alfonso Jimenez <djalfo18@gmail.com>",
@@ -26,6 +27,7 @@
     "@storybook/react": "^7.6.10",
     "@storybook/react-webpack5": "^7.6.10",
     "@storybook/test": "^7.6.10",
+    "@storybook/test-runner": "^0.16.0",
     "prop-types": "^15.8.1",
     "storybook": "^7.6.10"
   }
