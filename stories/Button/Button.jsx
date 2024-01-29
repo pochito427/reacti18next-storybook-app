@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next'
 import './button.css';
 
 /**
@@ -7,6 +8,7 @@ import './button.css';
  */
 export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  const { t } = useTranslation();
   return (
     <button
       type="button"
@@ -14,7 +16,7 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
       style={backgroundColor && { backgroundColor }}
       {...props}
     >
-      {label}
+      {t('button.btnLabel', {label})}
     </button>
   );
 };

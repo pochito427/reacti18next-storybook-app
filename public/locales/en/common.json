@@ -1,9 +1,12 @@
 {
     "header": {
         "heading": "Acme",
-        "welcomeMessage": "Welcome",
+        "welcomeMessage": "Welcome, <b>{{userName}}</b>!",
         "logOutBtnLabel": "Log out",
         "logInBtnLabel": "Log in",
         "signUpBtnLabel": "Sign up"
+    },
+    "button": {
+        "btnLabel": "{{ label }}"
     }
 }

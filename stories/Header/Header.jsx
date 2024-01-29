@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useTranslation } from 'react-i18next'
+import { useTranslation, Trans } from 'react-i18next'
 
 import { Button } from '../Button/Button';
 import './header.css';
@@ -34,7 +34,11 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => {
         {user ? (
           <>
             <span className="welcome">
-                {t('header.welcomeMessage')}, <b>{user.name}</b>!
+                <Trans 
+                  i18nKey='header.welcomeMessage' 
+                  values={{userName: user.name}} 
+                  components={{ b: <strong /> }}>
+                </Trans>
             </span>
             <Button size="small" onClick={onLogout} label={t('header.logOutBtnLabel')} />
           </>
