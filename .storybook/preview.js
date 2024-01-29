@@ -3,6 +3,8 @@ import 'minireset.css'
 import '../styles/global.css'
 import '../styles/tokens.css'
 
+import i18n from './i18next';
+
 const styles = {
   display: "flex",
   flexDirection: "column",
@@ -25,6 +27,13 @@ export const decorators = [
 ]
 
 const preview = {
+  globals: {
+    locale: "en",
+    locales: {
+        en: {title: "English", left: '🇺🇸'},
+        es: {title: "Español", left: 'CO'},
+    },
+  },
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
@@ -33,6 +42,7 @@ const preview = {
         date: /Date$/i,
       },
     },
+    i18n,
   },
 };
 

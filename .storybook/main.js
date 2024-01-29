@@ -9,6 +9,8 @@ const config = {
     "@storybook/addon-essentials",
     "@storybook/addon-onboarding",
     "@storybook/addon-interactions",
+    // other addons...
+    'storybook-react-i18next',
   ],
   framework: {
     name: "@storybook/react-webpack5",

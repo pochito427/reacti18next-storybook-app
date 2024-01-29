@@ -1,0 +1,9 @@
+{
+    "header": {
+        "heading": "Acme",
+        "welcomeMessage": "Bienvenido",
+        "logOutBtnLabel": "Cerrar sesión",
+        "logInBtnLabel": "Iniciar sesión",
+        "signUpBtnLabel": "Registrar"
+    }
+}
