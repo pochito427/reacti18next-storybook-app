@@ -31,6 +31,7 @@ Primary.play = async({args, canvasElement}) => {
   const canvas = within(canvasElement);
   await userEvent.click(canvas.getByRole('button'));
   await expect(canvas.getByText('Button')).toBeInTheDocument();
+  await expect(canvas.getByLabelText('Button')).toBeInTheDocument();
 };
 
 export const Secondary = {
@@ -70,4 +71,5 @@ Warning.play = async({args, canvasElement}) => {
   const canvas = within(canvasElement);
   await userEvent.click(canvas.getByRole('button'));
   await expect(canvas.getByText('Delete now')).toBeInTheDocument();
+  await expect(canvas.getByLabelText('Delete now')).toBeInTheDocument();
 };
