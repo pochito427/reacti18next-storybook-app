@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next'
 import { options } from './constants';
 import classNames from 'classnames';
 
@@ -12,13 +13,14 @@ export const Card = ({
     isClickable,
     isDragable
 }) => {
+    const { t } = useTranslation();
     return <div className={classNames("card", {
         [`color-${color}`]: color,
         [`size-${size}`]: size,
         "is-clickable": isClickable,
         "is-dragable": isDragable
     })}>
-        {children}
+        {t('card.text', {children})}
     </div>
 };
 

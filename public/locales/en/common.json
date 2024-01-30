@@ -2,6 +2,9 @@
     "button": {
         "btnLabel": "{{ label }}"
     },
+    "card": {
+        "text": "{{ children }}"
+    },
     "header": {
         "heading": "Acme",
         "welcomeMessage": "Welcome, <b>{{userName}}</b>!",

@@ -2,6 +2,9 @@
     "button": {
         "btnLabel": "{{ label }}"
     },
+    "card": {
+        "text": "Yo soy una tarjeta por defecto"
+    },
     "header": {
         "heading": "Acme",
         "welcomeMessage": "Bienvenido, <b>{{userName}}</b>!",
