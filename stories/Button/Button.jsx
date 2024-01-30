@@ -6,7 +6,7 @@ import './button.css';
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
+export const Button = ({ primary, backgroundColor, size, label, ariaLabel, ...props }) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   const { t } = useTranslation();
   return (
@@ -14,6 +14,7 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
       type="button"
       className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
       style={backgroundColor && { backgroundColor }}
+      aria-label={t('button.btnAriaLabel', {ariaLabel})}
       {...props}
     >
       {t('button.btnLabel', {label})}
@@ -38,6 +39,7 @@ Button.propTypes = {
    * Button contents
    */
   label: PropTypes.string.isRequired,
+  ariaLabel: PropTypes.string.isRequired,
   /**
    * Optional click handler
    */

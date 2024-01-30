@@ -1,6 +1,7 @@
 {
     "button": {
-        "btnLabel": "{{ label }}"
+        "btnLabel": "{{ label }}",
+        "btnAriaLabel": "{{ ariaLabel }}"
     },
     "card": {
         "text": "{{ children }}"

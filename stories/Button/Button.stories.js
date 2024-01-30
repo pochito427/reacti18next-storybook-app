@@ -23,6 +23,7 @@ export const Primary = {
   args: {
     primary: true,
     label: 'Button',
+    ariaLabel: 'Button',
   },
 };
 
@@ -35,6 +36,7 @@ Primary.play = async({args, canvasElement}) => {
 export const Secondary = {
   args: {
     label: 'Button',
+    ariaLabel: 'Button',
   },
 };
 
@@ -42,6 +44,7 @@ export const Large = {
   args: {
     size: 'large',
     label: 'Button',
+    ariaLabel: 'Button',
   },
 };
 
@@ -49,6 +52,7 @@ export const Small = {
   args: {
     size: 'small',
     label: 'Button',
+    ariaLabel: 'Button',
   },
 };
 
@@ -57,6 +61,7 @@ export const Warning = {
   args: {
     primary: true,
     label: 'Delete now',
+    ariaLabel: 'Delete now',
     backgroundColor: 'red',
   }
 };

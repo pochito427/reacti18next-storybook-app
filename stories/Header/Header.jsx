@@ -40,12 +40,12 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => {
                   components={{ b: <strong /> }}>
                 </Trans>
             </span>
-            <Button size="small" onClick={onLogout} label={t('header.logOutBtnLabel')} />
+            <Button size="small" onClick={onLogout} label={t('header.logOutBtnLabel')} ariaLabel={t('header.logOutBtnLabel')} />
           </>
         ) : (
           <>
-            <Button size="small" onClick={onLogin} label={t('header.logInBtnLabel')} />
-            <Button primary size="small" onClick={onCreateAccount} label={t('header.signUpBtnLabel')} />
+            <Button size="small" onClick={onLogin} label={t('header.logInBtnLabel')} ariaLabel={t('header.logInBtnLabel')} />
+            <Button primary size="small" onClick={onCreateAccount} label={t('header.signUpBtnLabel')} ariaLabel={t('header.signUpBtnLabel')} />
           </>
         )}
       </div>
