@@ -1,0 +1,8 @@
+.picture img {
+    display: block;
+    width: 100%;
+}
+
+.is-rounded img {
+    border-radius: 100%;
+}
