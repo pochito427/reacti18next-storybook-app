@@ -1,3 +1,5 @@
+import { within } from '@storybook/testing-library';
+import { expect } from '@storybook/jest';
 import { Picture } from './Picture';
 
 export default {
@@ -18,6 +20,11 @@ export default {
 const Template = (args) => <Picture {...args} />;
 
 export const Default = Template.bind({});
+
+Default.play = async({args, canvasElement}) => {
+    const canvas = within(canvasElement);
+    await expect(canvas.getByAltText('Alternative text')).toBeInTheDocument();
+};
 
 export const Rounded = Template.bind({});
 Rounded.args = {
