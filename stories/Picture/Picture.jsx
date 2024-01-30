@@ -12,10 +12,11 @@ export const Picture = ({
     height,
     isRounded
 }) => {
+    const { t } = useTranslation();
     return <picture className={classNames("picture", {
         "is-rounded": isRounded
     })}>
-        <img src={src} alt={alt} width={width} height={height} />
+        <img src={src} alt={t('picture.altText', {alt})} width={width} height={height} />
     </picture>
 };
 

@@ -24,5 +24,8 @@
         "tipWrapperSpan": "Tip",
         "tipWrapperFirstText": "Ajuste el ancho del lienzo con el",
         "tipWrapperSecondText": "Complemento de ventanas gráficas en la barra de herramientas"
+    },
+    "picture": {
+        "altText": "{{ alt }}"
     }
 }

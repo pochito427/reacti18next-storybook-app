@@ -24,5 +24,8 @@
         "tipWrapperSpan": "Tip",
         "tipWrapperFirstText": "Adjust the width of the canvas with the",
         "tipWrapperSecondText": "Viewports addon in the toolbar"
+    },
+    "picture": {
+        "altText": "{{ alt }}"
     }
 }
