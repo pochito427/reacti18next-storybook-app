@@ -1,4 +1,7 @@
 {
+    "button": {
+        "btnLabel": "{{ label }}"
+    },
     "header": {
         "heading": "Acme",
         "welcomeMessage": "Bienvenido, <b>{{userName}}</b>!",
@@ -6,7 +9,16 @@
         "logInBtnLabel": "Iniciar sesión",
         "signUpBtnLabel": "Registrar"
     },
-    "button": {
-        "btnLabel": "{{ label }}"
+    "page": {
+        "heading": "Páginas en Storybook",
+        "firstParagraph": "Recomendamos crear interfaces de usuario con un proceso <a><strong>basado en componentes</strong></a> que comience con componentes atómicos y termine con páginas.",
+        "secondParagraph": "Represente páginas con datos simulados. Esto facilita la creación y revisión de estados de páginas sin necesidad de navegar hasta ellos en su aplicación. A continuación se muestran algunos patrones útiles para administrar datos de páginas en Storybook:",
+        "firstListItem": "Utilice un componente conectado de nivel superior. Storybook le ayuda a componer dichos datos a partir de los 'argumentos' de las historias de los componentes secundarios",
+        "secondListItem": "Reúna datos en el componente de página de sus servicios. Puede simular estos servicios usando Storybook.",
+        "thirdParagraphFirstText": "Obtenga un tutorial guiado sobre desarrollo basado en componentes en los <a>tutoriales de Storybook</a>. ",
+        "thirdParagraphSecondText": "Lea más en los <a>documentos</a>.",
+        "tipWrapperSpan": "Tip",
+        "tipWrapperFirstText": "Ajuste el ancho del lienzo con el",
+        "tipWrapperSecondText": "Complemento de ventanas gráficas en la barra de herramientas"
     }
 }
