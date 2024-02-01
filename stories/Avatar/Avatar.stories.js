@@ -1,3 +1,6 @@
+import i18n from '../../.storybook/i18next';
+import { within } from '@storybook/testing-library';
+import { expect } from '@storybook/jest';
 import { Avatar } from './Avatar';
 import { options } from './constants';
 
@@ -31,6 +34,11 @@ const ListTemplate = ({items, ...args}) => items.map
 ((item, index) => <Avatar key={index} {...args} {...item}/>);
 
 export const Default = Template.bind({});
+
+Default.play = async({args, canvasElement}) => {
+    const canvas = within(canvasElement);
+    await expect(canvas.getByAltText('Test picture')).toBeInTheDocument();
+};
 
 export const Sizes = ListTemplate.bind({});
 Sizes.args = {
