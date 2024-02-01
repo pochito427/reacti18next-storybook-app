@@ -1,4 +1,7 @@
 {
+    "avatar": {
+        "altText": "Imagen de prueba"
+    },
     "button": {
         "btnLabel": "{{ label }}",
         "btnAriaLabel": "{{ ariaLabel }}"

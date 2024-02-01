@@ -1,4 +1,7 @@
 {
+    "avatar": {
+        "altText": "{{ alt }}"
+    },
     "button": {
         "btnLabel": "{{ label }}",
         "btnAriaLabel": "{{ ariaLabel }}"
