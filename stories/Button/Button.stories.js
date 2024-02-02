@@ -61,9 +61,10 @@ export const Small = {
 export const Warning = {
   args: {
     primary: true,
+    warn: true,
     label: 'Delete now',
     ariaLabel: 'Delete now',
-    backgroundColor: 'red',
+    backgroundColor: 'yellow',
   }
 };
 

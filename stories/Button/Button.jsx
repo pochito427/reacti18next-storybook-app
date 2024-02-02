@@ -6,13 +6,14 @@ import './button.css';
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, backgroundColor, size, label, ariaLabel, ...props }) => {
+export const Button = ({ primary, warn, backgroundColor, size, label, ariaLabel, ...props }) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  const warning = warn ? 'storybook-button--warning' : 'storybook-button'
   const { t } = useTranslation();
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      className={[warning, `storybook-button--${size}`, mode].join(' ')}
       style={backgroundColor && { backgroundColor }}
       aria-label={t('button.btnAriaLabel', {ariaLabel})}
       {...props}
@@ -27,6 +28,7 @@ Button.propTypes = {
    * Is this the principal call to action on the page?
    */
   primary: PropTypes.bool,
+  warn: PropTypes.bool,
   /**
    * What background color to use
    */
@@ -49,6 +51,7 @@ Button.propTypes = {
 Button.defaultProps = {
   backgroundColor: null,
   primary: false,
+  warn: false,
   size: 'medium',
   onClick: undefined,
 };
