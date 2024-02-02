@@ -10,6 +10,7 @@ const config = {
     "@storybook/addon-onboarding",
     "@storybook/addon-interactions",
     // other addons...
+    '@storybook/addon-a11y',
     'storybook-react-i18next',
   ],
   framework: {
