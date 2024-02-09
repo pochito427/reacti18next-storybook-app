@@ -2,7 +2,7 @@ import { Card } from './Card';
 import { options } from './constants';
 
 export default {
-    title: "Card",
+    title: "Organisms/Card",
     component: Card,
     tags: ['autodocs'],
     args: {

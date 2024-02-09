@@ -3,7 +3,7 @@ import { expect } from '@storybook/jest';
 import { Picture } from './Picture';
 
 export default {
-    title: "Picture",
+    title: "Atoms/Picture",
     component: Picture,
     tags: ['autodocs'],
     args: {

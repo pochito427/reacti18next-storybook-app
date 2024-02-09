@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation, Trans } from 'react-i18next'
 
-import { Button } from '../Button/Button';
+import { Button } from '../../Atoms/Button/Button';
 import './header.css';
 
 

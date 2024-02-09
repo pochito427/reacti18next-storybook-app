@@ -1,11 +1,11 @@
-import i18n from '../../.storybook/i18next';
+import i18n from '../../../.storybook/i18next';
 import { within } from '@storybook/testing-library';
 import { expect } from '@storybook/jest';
 import { Avatar } from './Avatar';
 import { options } from './constants';
 
 export default {
-    title: "Avatar",
+    title: "Molecules/Avatar",
     component: Avatar,
     tags: ['autodocs'],
     args: {

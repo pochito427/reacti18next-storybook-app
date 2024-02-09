@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import { mapSize } from './helpers';
 import { options } from './constants';
 
-import { Picture } from '../Picture/Picture';
+import { Picture } from '../../Atoms/Picture/Picture';
 import './avatar.css';
 
 export const Avatar = ({src, alt, size="md"}) => {
